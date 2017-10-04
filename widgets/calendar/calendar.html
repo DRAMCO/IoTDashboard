@@ -1,0 +1,14 @@
+
+<table class="next">
+  <tr data-foreach-e='next_events'>
+  	<td><span data-bind-class="e.calendar"></span></td>
+  	<td>
+  		<p class="time"><span data-bind="e.start_date"></span> <span data-bind="e.start_time"></span></p>
+  		<p data-bind="e.summary | truncate 20, '…'"></p>
+  	</td>
+    <!--<td data-bind="e.start_date" class="date"></td>
+    <td data-bind="e.start_time" class="time"></td>-->
+  </tr>
+</table>
+
+<div class="updated-at" data-bind="updatedAtMessage"></div>

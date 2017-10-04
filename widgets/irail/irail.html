@@ -1,0 +1,14 @@
+
+
+<ul class="list">
+	<li data-foreach-route="routes" data-bind-class="route.canceled">
+		<p class="time">
+			<span class="route_time" data-bind="route.time | time"></span>
+			<span class="route_delay" data-bind="route.delay | delay"></span>
+		</p>
+		<span class="route_direction"><span data-bind="route.direction"></span></span>
+		<span data-bind-class="route.platformChanged" data-bind="route.platform" ></span>
+	</li>
+</ul>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

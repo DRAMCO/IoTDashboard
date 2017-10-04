@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'smashing'
+gem 'rest-client'
+gem 'json'
+gem 'nokogiri'
+gem 'htmlentities'
+gem 'feedjira'
+gem 'viewpoint'
+gem 'icalendar'
+gem 'octokit'
+gem 'actionview'
+gem 'twitter'

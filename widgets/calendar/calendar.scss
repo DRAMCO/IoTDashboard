@@ -1,0 +1,82 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #2B292B; //#ec663c;
+
+$title-color:       rgba(255, 255, 255, 1);
+$subtitle-color:    rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-calendar styles
+// ----------------------------------------------------------------------------
+.widget-calendar {
+
+  background-color: $background-color;
+  .subtitle {
+  color: $subtitle-color;
+  font-size: 0.75em;
+
+  }
+
+  .next {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px;
+  }
+
+  .next tbody tr td{
+    text-align: left;
+    vertical-align: top;
+    padding-top: 10px;
+  }
+  .next tbody tr:first-child td{
+    padding-top: 0px;
+  }
+
+  .next tbody tr td p{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -3px;
+  }
+  .next tbody tr td .icloud, .next tbody tr td .gmail{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-right: 8px;
+  }
+  .next tbody tr td .icloud{
+    background-color: rgb(0,219,83);
+  }
+  .next tbody tr td .gmail{
+    background-color: rgb(105,66,173);
+  }
+
+  .next tbody tr .time, .next tbody tr .date{
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    margin: 0px;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+
+  &.large h3 {
+    font-size: 65px;
+  }
+
+  .updated-at {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+}

@@ -1,0 +1,40 @@
+$background-color: #2B292B;
+$value-color: #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.8);
+
+
+.widget-news {
+
+    background-color: $background-color;
+    padding: 0px 30px;
+
+    .post-container{
+        margin-top: -30px;
+    }
+
+    .heading {
+        color: $title-color;
+        margin-bottom: 1.2em;
+        font-size: 1.2em;
+    }
+
+    .updated-at {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.3);    
+    }
+
+    .summary{
+        font-size: 12pt;
+        font-weight: 300;
+
+        text-overflow: ellipsis;
+
+        overflow: hidden;
+        max-height: 100px;
+    }
+
+}

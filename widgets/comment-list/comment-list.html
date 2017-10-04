@@ -1,0 +1,18 @@
+<div class="wrap">
+    <h1 class="title" data-bind="title"></h1>
+
+    <div class="comment-list">
+        <div data-foreach-comment='comments' class="comment-container">
+          <h3><img class="avatar" data-bind-src='comment.avatar'/><span data-bind='comment.name' class="name"></span></h3>
+          <p class="comment" data-bind='comment.body | raw | parseHashTag | parseTwitterUser | fixAmp | raw'></p>
+          <span class="time" data-bind='comment.time'></span>
+          <div class="tweet-img-wrapper">
+            <img class="tweet-img" data-showif="comment.img" data-bind-src="comment.img" alt="">
+          </div>
+        </div>
+    </div>
+
+
+    <p class="more-info" data-bind="moreinfo"></p>
+    <p class="updated-at" data-bind="updatedAtMessage"></p>
+</div>

@@ -1,0 +1,87 @@
+// https://github.com/DidrikLindqvist/Dashing.io-widgets
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #2B292B; // #F87060;
+
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-irail {
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  h1{
+    font-weight: 100;
+    font-size: 30px;
+  }
+  ul {
+    margin: -15px 10px 0px 10px;
+    text-align: left;
+    list-style-type: none;
+  }
+  ul.list{
+    margin-left:30px;
+    list-style-type: none;
+    font-weight: 300;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .updated-at {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .nodelay{
+    display: none;
+  }
+
+  .platformChanged, .platformNotChanged{
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 3px;
+    padding: 3px 4px;
+    float: right; 
+    margin-right: 20px;
+    margin-top: -42px;
+    display: block;
+    width: 28px;
+    text-align: center;
+  }
+  .platformChanged{
+    background: #fff;
+    color: $background-color
+  }
+  .route_delay{
+    font-size: 14px;
+    color: #EA4335;
+  }
+  .time{
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+  }
+  .route_direction{
+    font-size: 20px;
+    margin-top: -3px;
+    display: block;
+    color: #fff;
+  }
+  .canceled .route_direction{
+    color: #EA4335;
+    text-decoration: line-through;
+  }
+  .canceled .route_direction span{
+    color: #fff;
+  }
+}

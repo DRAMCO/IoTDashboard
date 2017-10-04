@@ -1,0 +1,103 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:   darken(#eb9c3c, 5%);
+
+$comment-color: 	   rgba(255, 255, 255, 1);
+$hashtag-bg: 		     rgba(adjust-hue(darken($background-color, 10%), -60deg), 0.2);
+$twitter-user-bg:    rgba(adjust-hue(darken($background-color, 10%), -150deg), 0.2);
+$title-color:        rgba(255, 255, 255, 0.7);
+$moreinfo-color:     rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-comment styles
+// ----------------------------------------------------------------------------
+.widget-comment-list {
+	overflow: hidden;
+	height: 100%;
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+    margin-bottom: 15px;
+  }
+
+  .comment-list {
+		overflow: hidden;
+		margin-bottom: 15px;
+  }
+
+  .comment-container {
+  	color: $comment-color;
+		text-align: left;
+		border-bottom: 1px solid rgba(255,255,255,0.25);
+		padding-bottom: 5px;
+		padding-top: 5px;
+		position: relative;
+		&:first-child {
+			border-top: 1px solid rgba(255,255,255,0.25);
+		}
+		h3 {
+			font-size: 16px;
+		}
+		.comment {
+			font-size: 15px;
+			font-weight: 200;
+			line-height: 20px;
+			margin-left: 45px;
+		}
+		.hashtag {
+			padding-left: 2px;
+			padding-right: 2px;
+			background-color: $hashtag-bg;
+			font-weight: 500;
+			display: inline-block;
+			&:hover{
+				background-color: rgba(darken($hashtag-bg, 25%), 0.5);
+			}
+		}
+
+		.twitter-user {
+			padding-left: 2px;
+			padding-right: 2px;
+			background-color: $twitter-user-bg;
+			font-weight: 500;
+			display: inline-block;
+			&:hover{
+				background-color: rgba(darken($twitter-user-bg, 25%), 0.5);
+			}
+		}
+		.tweet-img {
+			margin-left: 45px;
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-top: 5px;
+		}
+		.avatar {
+			width: 40px;
+			margin-right: 5px;
+		}
+		.time {
+			position: absolute;
+			right: 0px;
+			top: 2px;
+			letter-spacing: 1px;
+			font-size: 10px;
+			color: $comment-color;
+		}
+  }
+
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+  }
+
+}
